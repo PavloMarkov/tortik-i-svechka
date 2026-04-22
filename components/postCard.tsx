@@ -27,7 +27,7 @@ export const PostCard: FC<PostCardProps> = ({
     : null;
   return (
     <article
-      className="group relative bg-white rounded-2xl overflow-hidden max-w-sm w-full"
+      className="group relative bg-white rounded-2xl overflow-hidden max-w-4xl w-full"
       style={{
         boxShadow: "0 2px 8px rgba(0,0,0,0.07)",
         border: "1px solid #f0f0f0",
@@ -43,7 +43,7 @@ export const PostCard: FC<PostCardProps> = ({
       {/* Image */}
       <div
         style={{
-          height: 200,
+          height: 500,
           overflow: "hidden",
           background: "#f4f4f5",
           position: "relative",
@@ -135,36 +135,6 @@ export const PostCard: FC<PostCardProps> = ({
         >
           {body}
         </p>
-
-        <div style={{ paddingTop: 6 }}>
-          <span
-            style={{
-              fontSize: 13,
-              fontWeight: 600,
-              color: "#6366f1",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 5,
-              cursor: "pointer",
-            }}
-          >
-            Read more
-            <svg
-              width="15"
-              height="15"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2.2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </span>
-        </div>
       </div>
     </article>
   );
