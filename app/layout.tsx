@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import InstagramIcon from "../components/InstagramIcon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,9 +46,20 @@ export default function RootLayout({
                 priority
               />
             </Link>
-            <div className="text-2xl">Blog by Kseniia Markova</div>
+            <div className="flex w-full items-center justify-between">
+              <div className="text-2xl">Blog by Kseniia Markova</div>
+              <a
+                href="https://www.instagram.com/tortik_i_svechka"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="text-black dark:text-white hover:text-blue-400">
+                  <InstagramIcon />
+                </div>
+              </a>
+            </div>
           </header>
-          <main className="flex flex-1 w-full max-w-4xl flex-col items-center justify-between mx-auto bg-white dark:bg-black sm:items-center">
+          <main className="flex flex-1 w-full max-w-4xl flex-col items-center justify-between mx-auto bg-white dark:bg-black sm:items-center px-3">
             {children}
           </main>
         </div>

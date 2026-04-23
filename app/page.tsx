@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, Gem, Gift, Infinity } from "lucide-react";
 import Link from "next/link";
 import { ImageWithFallback } from "@/components/imageWithFallback";
 
@@ -27,8 +27,7 @@ export default async function Home() {
                   href="/portfolio"
                   className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  View My Work
-                  <ArrowRight className="w-5 h-5" />
+                  View My <Gem className="w-5 h-5" />
                 </Link>
               </div>
             </div>
@@ -45,12 +44,14 @@ export default async function Home() {
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-6 h-6 text-green-600" />
+                    <Gift className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">50+ Sells</div>
+                    <div className="font-semibold text-gray-900 flex items-center gap-2">
+                      <Infinity /> Positive Vibes
+                    </div>
                     <div className="text-sm text-gray-600">
-                      Successfully Delivered
+                      Successfully Provided
                     </div>
                   </div>
                 </div>
