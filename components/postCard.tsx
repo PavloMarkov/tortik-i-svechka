@@ -27,7 +27,7 @@ export const PostCard: FC<PostCardProps> = ({
     : null;
   return (
     <article
-      className="group relative bg-white rounded-2xl overflow-hidden max-w-4xl w-full"
+      className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden max-w-4xl w-full"
       style={{
         boxShadow: "0 2px 8px rgba(0,0,0,0.07)",
         border: "1px solid #f0f0f0",
@@ -68,71 +68,24 @@ export const PostCard: FC<PostCardProps> = ({
       </div>
 
       {/* Content */}
-      <div
-        style={{
-          padding: "1.5rem",
-          display: "flex",
-          flexDirection: "column",
-          gap: "0.6rem",
-        }}
-      >
+      <div className="p-6 flex flex-col gap-2">
         {(author || date) && (
-          <div
-            style={{
-              fontSize: 11,
-              color: "#a1a1aa",
-              fontWeight: 600,
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-              display: "flex",
-              gap: 8,
-              alignItems: "center",
-            }}
-          >
+          <div className="text-gray-500 dark:text-gray-400 flex gap-2 items-center uppercase text-xs font-semibold">
             {author && <span>{author}</span>}
             {author && date && (
-              <span
-                style={{
-                  width: 4,
-                  height: 4,
-                  borderRadius: "50%",
-                  background: "#d4d4d8",
-                  display: "inline-block",
-                }}
-              />
+              <span className="inline-block size-1 bg-[#d4d4d8] rounded-[50%]" />
             )}
-            {date && <span>{formattedDate}</span>}
+            {date && (
+              <span className="text-gray-500 dark:text-gray-400">
+                {formattedDate}
+              </span>
+            )}
           </div>
         )}
 
-        <h2
-          style={{
-            fontSize: "1.2rem",
-            fontWeight: 700,
-            color: "#18181b",
-            lineHeight: 1.3,
-            margin: 0,
-            transition: "color 0.3s",
-            cursor: "default",
-          }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = "#6366f1")}
-          onMouseLeave={(e) => (e.currentTarget.style.color = "#18181b")}
-        >
-          {title}
-        </h2>
+        <h2 className="dark:text-white font-bold text-xl">{title}</h2>
 
-        <p
-          style={{
-            fontSize: 14,
-            color: "#71717a",
-            lineHeight: 1.65,
-            margin: 0,
-            display: "-webkit-box",
-            WebkitLineClamp: 3,
-            WebkitBoxOrient: "vertical",
-            overflow: "hidden",
-          }}
-        >
+        <p className="text-gray-600 dark:text-gray-400 text-sm line-clamp-3">
           {body}
         </p>
       </div>
