@@ -30,7 +30,7 @@ const HeaderV2: FC = () => {
             className="flex items-center gap-2 hover:scale-105 transition-transform"
           >
             <Sparkles className="w-8 h-8 text-pink-500 dark:text-pink-300" />
-            <span className="text-2xl font-bold bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+            <span className="md:text-2xl text-xl font-bold bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
               Blog by Kseniia Markova
             </span>
           </Link>

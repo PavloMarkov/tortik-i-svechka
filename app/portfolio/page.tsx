@@ -6,7 +6,7 @@ import Link from "next/link";
 export default async function Portfolio() {
   const { data } = await supabase
     .from("posts")
-    .select("id, title, image_url, body, created_at");
+    .select("id, title, image_url, body, created_at, price, currency");
 
   const postList = data || [];
 
@@ -56,8 +56,7 @@ export default async function Portfolio() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute top-3 right-3 bg-pink-400 dark:bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-md">
-                    {/* ${toy.price} */}
-                    $1
+                    {`${toy.price} ${toy.currency}`}
                   </div>
                 </div>
 

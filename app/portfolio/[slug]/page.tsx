@@ -9,7 +9,7 @@ const ItemPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
 
   const { data } = await supabase
     .from("posts")
-    .select("id, title, body, image_url, created_at")
+    .select("id, title, body, image_url, created_at, price, currency")
     .eq("id", slug) // where id = slug
     .single();
 
@@ -50,8 +50,7 @@ const ItemPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-6 right-6 bg-pink-500 dark:bg-pink-600 text-white px-6 py-3 rounded-full text-2xl font-bold shadow-lg">
-                $1
-                {/* ${toy.price} */}
+                {`${data.price} ${data.currency}`}
               </div>
             </div>
           </div>
