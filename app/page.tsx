@@ -30,7 +30,7 @@ export default async function Home() {
               <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
                 <ImageWithFallback
                   src={
-                    "https://scontent-iad6-1.cdninstagram.com/v/t51.2885-19/296947201_1764954893858502_7878095604808791701_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-iad6-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gH6anZd1Mvexi_v_UlKZvoDTMlne3Pf4KK33Tl1mdxGNU30fFIfo740BuNOaAp7fjM&_nc_ohc=OUI5qqzy9egQ7kNvwFHehpx&_nc_gid=wB0ejY-wZlgE72N59WfHTw&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_Af0i_RhpBKRRsXMGiouZWOUJKbI-1EFlwdEU6hCQeZPO_Q&oe=69EEBD30&_nc_sid=7a9f4b"
+                    "https://bdpf67gedtuavjqh.public.blob.vercel-storage.com/296947201_1764954893858502_7878095604808791701_n.jpg"
                   }
                   alt="Tortik-i-svechka Logo"
                   className="w-full h-full object-cover"

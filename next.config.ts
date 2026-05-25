@@ -5,25 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "scontent-iad6-1.cdninstagram.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "scontent-iad3-2.cdninstagram.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "images.unsplash.com",
-        port: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "instagram.fiev6-1.fna.fbcdn.net",
+        hostname: "bdpf67gedtuavjqh.public.blob.vercel-storage.com",
         port: "",
         pathname: "/**",
       },

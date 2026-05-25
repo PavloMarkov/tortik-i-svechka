@@ -13,8 +13,6 @@ const ItemPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
     .eq("id", slug) // where id = slug
     .single();
 
-  console.log(data);
-
   const toy = {
     features: ["Soft and cuddly", "Eyes and nose", "Easy to clean"],
     materials: [
