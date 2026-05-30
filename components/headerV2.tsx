@@ -1,12 +1,15 @@
 "use client";
 import { Moon, Sparkles, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import Link from "next/link";
 import { FC } from "react";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+
+import { LanguageSwitcher } from "./languageSwitcher";
+import { Link, usePathname } from "@/i18n/navigation";
 
 const HeaderV2: FC = () => {
   const { theme, setTheme } = useTheme();
+  const t = useTranslations("Header");
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -31,20 +34,20 @@ const HeaderV2: FC = () => {
           >
             <Sparkles className="w-8 h-8 text-pink-500 dark:text-pink-300" />
             <span className="md:text-2xl text-xl font-bold bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-              Blog by Kseniia Markova
+              {t("siteTitle")}
             </span>
           </Link>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 sm:gap-6">
             <Link
               href="/"
-              className={`px-4 py-2 rounded-full transition-all ${
+              className={`px-4 py-2 hidden md:flex rounded-full transition-all ${
                 isActive("/")
                   ? "bg-pink-300 dark:bg-pink-600 text-white shadow-md"
                   : "text-gray-700 dark:text-gray-200 hover:bg-pink-200 dark:hover:bg-pink-800"
               }`}
             >
-              Home
+              {t("home")}
             </Link>
             <Link
               href="/portfolio"
@@ -54,13 +57,15 @@ const HeaderV2: FC = () => {
                   : "text-gray-700 dark:text-gray-200 hover:bg-pink-200 dark:hover:bg-pink-800"
               }`}
             >
-              Toys
+              {t("toys")}
             </Link>
+
+            <LanguageSwitcher />
 
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-full bg-pink-200 dark:bg-pink-700 hover:bg-pink-300 dark:hover:bg-pink-600 transition-all hover:scale-110"
-              aria-label="Toggle theme"
+              className="p-2 rounded-full bg-pink-200 dark:bg-pink-700 hover:bg-pink-300 dark:hover:bg-pink-600 transition-all hover:scale-110 hidden md:flex"
+              aria-label={t("toggleTheme")}
             >
               {theme === "dark" ? (
                 <Moon className="w-5 h-5 text-purple-700" />

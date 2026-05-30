@@ -1,0 +1,63 @@
+{
+  "Metadata": {
+    "title": "Blog by Kseniia Markova",
+    "description": "Blog by Kseniia Markova about hand-made toys, fun videos, and other stuff"
+  },
+  "Header": {
+    "siteTitle": "Blog by Kseniia Markova",
+    "home": "Home",
+    "toys": "Toys",
+    "toggleTheme": "Toggle theme"
+  },
+  "Footer": {
+    "copyright": "© {year} ❤️ Kseniia Markova ❤️"
+  },
+  "LanguageSwitcher": {
+    "label": "Language",
+    "en": "English",
+    "uk": "Ukrainian",
+    "tr": "Turkish"
+  },
+  "Home": {
+    "heroTitle": "Welcome to Magical Toys",
+    "heroSubtitle": "Discover a world of handmade treasures crafted with love, just for you! ✨",
+    "exploreCollection": "Explore Our Collection ✨",
+    "logoAlt": "Tortik-i-svechka Logo",
+    "positiveVibes": "Positive Vibes",
+    "successfullyProvided": "Successfully Provided",
+    "featuresTitle": "Why You'll Love Our Toys",
+    "madeWithLoveTitle": "Made with Love",
+    "madeWithLoveDescription": "Every toy is carefully handcrafted with attention to detail and lots of love",
+    "uniqueTitle": "Unique & Special",
+    "uniqueDescription": "One-of-a-kind pieces that you won't find anywhere else in the world",
+    "safeTitle": "Safe & Natural",
+    "safeDescription": "Made from eco-friendly materials that are safe for children and the planet",
+    "ctaTitle": "Ready to Find Your Perfect Toy?",
+    "ctaSubtitle": "Browse our magical collection and discover toys that will bring joy and wonder! 🌟",
+    "startShopping": "Start Shopping →"
+  },
+  "Portfolio": {
+    "title": "Our Magical Collection",
+    "subtitle": "Handcrafted with love, made just for you! ✨",
+    "categoryHandmadeToys": "Handmade toys",
+    "categoryFunVideos": "fun videos",
+    "categoryOtherStuff": "other stuff",
+    "viewDetails": "View Details"
+  },
+  "ProductDetail": {
+    "backToCollection": "Back to Collection",
+    "categoryHandmadeToys": "Handmade toys",
+    "specialFeatures": "Special Features",
+    "naturalMaterials": "Natural Materials",
+    "features": {
+      "softAndCuddly": "Soft and cuddly",
+      "eyesAndNose": "Eyes and nose",
+      "easyToClean": "Easy to clean"
+    },
+    "materials": {
+      "lowPileCotton": "Low-pile cotton",
+      "naturalDyes": "Dyed with natural dyes",
+      "machineWashable": "Machine washable"
+    }
+  }
+}

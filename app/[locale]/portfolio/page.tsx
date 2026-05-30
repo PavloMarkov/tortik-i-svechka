@@ -1,47 +1,46 @@
 import { ImageWithFallback } from "@/components/imageWithFallback";
+import { Link } from "@/i18n/navigation";
 import { supabase } from "@/lib/supabaseClient";
 import { Sparkles } from "lucide-react";
-import Link from "next/link";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export default async function Portfolio() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default async function Portfolio({ params }: Props) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("Portfolio");
+
   const { data } = await supabase
     .from("posts")
     .select("id, title, image_url, body, created_at, price, currency");
 
   const postList = data || [];
 
-  const categories = ["Handmade toys", "fun videos", "other stuff"];
+  const categories = [
+    t("categoryHandmadeToys"),
+    t("categoryFunVideos"),
+    t("categoryOtherStuff"),
+  ];
 
   return (
     <>
       <div className="min-h-screen bg-linear-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-purple-950 dark:to-pink-950 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
           <div className="text-center mb-12">
             <div className="flex justify-center mb-4">
               <Sparkles className="w-12 h-12 text-pink-500 dark:text-pink-300 animate-pulse" />
             </div>
             <h1 className="text-5xl font-bold mb-4 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-              Our Magical Collection
+              {t("title")}
             </h1>
             <p className="text-xl text-gray-700 dark:text-gray-300">
-              Handcrafted with love, made just for you! ✨
+              {t("subtitle")}
             </p>
           </div>
 
-          {/* Categories */}
-          {/* <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {categories.map((category) => (
-              <span
-                key={category}
-                className="px-4 py-2 bg-linear-to-r from-pink-200 to-purple-200 dark:from-pink-800 dark:to-purple-800 rounded-full text-sm font-semibold text-gray-700 dark:text-gray-200 shadow-md"
-              >
-                {category}
-              </span>
-            ))}
-          </div> */}
-
-          {/* Toys Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {postList.map((toy) => (
               <Link
@@ -64,7 +63,6 @@ export default async function Portfolio() {
                   <div className="mb-2">
                     <span className="text-xs font-semibold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900 px-2 py-1 rounded-full">
                       {categories[0]}
-                      {/* {toy.category} */}
                     </span>
                   </div>
 
@@ -77,7 +75,7 @@ export default async function Portfolio() {
                   </p>
 
                   <div className="mt-4 flex items-center gap-2 text-pink-500 dark:text-pink-400 font-semibold">
-                    <span>View Details</span>
+                    <span>{t("viewDetails")}</span>
                     <span className="group-hover:translate-x-1 transition-transform">
                       →
                     </span>

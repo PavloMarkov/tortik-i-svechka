@@ -1,0 +1,63 @@
+{
+  "Metadata": {
+    "title": "Kseniia Markova'nın Blogu",
+    "description": "Kseniia Markova'nın el yapımı oyuncaklar, eğlenceli videolar ve daha fazlası hakkındaki blogu"
+  },
+  "Header": {
+    "siteTitle": "Kseniia Markova'nın Blogu",
+    "home": "Ana Sayfa",
+    "toys": "Oyuncaklar",
+    "toggleTheme": "Temayı değiştir"
+  },
+  "Footer": {
+    "copyright": "© {year} ❤️ Kseniia Markova ❤️"
+  },
+  "LanguageSwitcher": {
+    "label": "Dil",
+    "en": "İngilizce",
+    "uk": "Ukraynaca",
+    "tr": "Türkçe"
+  },
+  "Home": {
+    "heroTitle": "Sihirli Oyuncaklara Hoş Geldiniz",
+    "heroSubtitle": "Sizin için sevgiyle hazırlanmış el yapımı hazinelerin dünyasını keşfedin! ✨",
+    "exploreCollection": "Koleksiyonumuzu Keşfedin ✨",
+    "logoAlt": "Tortik-i-svechka Logosu",
+    "positiveVibes": "Pozitif Enerji",
+    "successfullyProvided": "Başarıyla Sunuldu",
+    "featuresTitle": "Oyuncaklarımızı Neden Seveceksiniz",
+    "madeWithLoveTitle": "Sevgiyle Yapıldı",
+    "madeWithLoveDescription": "Her oyuncak, detaylara dikkat edilerek ve bol sevgiyle özenle el yapımıdır",
+    "uniqueTitle": "Benzersiz ve Özel",
+    "uniqueDescription": "Dünyada başka hiçbir yerde bulamayacağınız eşsiz parçalar",
+    "safeTitle": "Güvenli ve Doğal",
+    "safeDescription": "Çocuklar ve gezegen için güvenli, çevre dostu malzemelerden yapılmıştır",
+    "ctaTitle": "Mükemmel Oyuncağınızı Bulmaya Hazır mısınız?",
+    "ctaSubtitle": "Sihirli koleksiyonumuza göz atın ve neşe ve hayranlık getirecek oyuncakları keşfedin! 🌟",
+    "startShopping": "Alışverişe Başla →"
+  },
+  "Portfolio": {
+    "title": "Sihirli Koleksiyonumuz",
+    "subtitle": "Sevgiyle el yapımı, sadece sizin için! ✨",
+    "categoryHandmadeToys": "El yapımı oyuncaklar",
+    "categoryFunVideos": "eğlenceli videolar",
+    "categoryOtherStuff": "diğer",
+    "viewDetails": "Detayları Gör"
+  },
+  "ProductDetail": {
+    "backToCollection": "Koleksiyona Dön",
+    "categoryHandmadeToys": "El yapımı oyuncaklar",
+    "specialFeatures": "Özel Özellikler",
+    "naturalMaterials": "Doğal Malzemeler",
+    "features": {
+      "softAndCuddly": "Yumuşak ve sevimli",
+      "eyesAndNose": "Gözler ve burun",
+      "easyToClean": "Temizlemesi kolay"
+    },
+    "materials": {
+      "lowPileCotton": "Alçak tüylü pamuk",
+      "naturalDyes": "Doğal boyalarla renklendirilmiş",
+      "machineWashable": "Makinede yıkanabilir"
+    }
+  }
+}

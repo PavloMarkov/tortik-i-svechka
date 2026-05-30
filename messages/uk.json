@@ -1,0 +1,63 @@
+{
+  "Metadata": {
+    "title": "Блог Ксенії Маркової",
+    "description": "Блог Ксенії Маркової про іграшки ручної роботи, веселі відео та інше"
+  },
+  "Header": {
+    "siteTitle": "Блог Ксенії Маркової",
+    "home": "Головна",
+    "toys": "Іграшки",
+    "toggleTheme": "Змінити тему"
+  },
+  "Footer": {
+    "copyright": "© {year} ❤️ Kseniia Markova ❤️"
+  },
+  "LanguageSwitcher": {
+    "label": "Мова",
+    "en": "Англійська",
+    "uk": "Українська",
+    "tr": "Турецька"
+  },
+  "Home": {
+    "heroTitle": "Ласкаво просимо до Чарівних Іграшок",
+    "heroSubtitle": "Відкрийте світ handmade скарбів, створених з любов'ю спеціально для вас! ✨",
+    "exploreCollection": "Переглянути колекцію ✨",
+    "logoAlt": "Логотип Tortik-i-svechka",
+    "positiveVibes": "Позитивні вібрації",
+    "successfullyProvided": "Успішно надано",
+    "featuresTitle": "Чому вам сподобаються наші іграшки",
+    "madeWithLoveTitle": "Зроблено з любов'ю",
+    "madeWithLoveDescription": "Кожна іграшка ретельно виготовлена вручну з увагою до деталей і багато любові",
+    "uniqueTitle": "Унікальні та особливі",
+    "uniqueDescription": "Ексклюзивні вироби, яких ви не знайдете більше ніде у світі",
+    "safeTitle": "Безпечні та натуральні",
+    "safeDescription": "Виготовлені з екологічних матеріалів, безпечних для дітей і планети",
+    "ctaTitle": "Готові знайти ідеальну іграшку?",
+    "ctaSubtitle": "Перегляньте нашу чарівну колекцію та відкрийте іграшки, що принесуть радість і диво! 🌟",
+    "startShopping": "Почати перегляд →"
+  },
+  "Portfolio": {
+    "title": "Наша чарівна колекція",
+    "subtitle": "Зроблено з любов'ю, створено спеціально для вас! ✨",
+    "categoryHandmadeToys": "Іграшки ручної роботи",
+    "categoryFunVideos": "веселі відео",
+    "categoryOtherStuff": "інше",
+    "viewDetails": "Детальніше"
+  },
+  "ProductDetail": {
+    "backToCollection": "Назад до колекції",
+    "categoryHandmadeToys": "Іграшки ручної роботи",
+    "specialFeatures": "Особливі переваги",
+    "naturalMaterials": "Натуральні матеріали",
+    "features": {
+      "softAndCuddly": "М'яка та приємна на дотик",
+      "eyesAndNose": "Очі та носик",
+      "easyToClean": "Легко чистити"
+    },
+    "materials": {
+      "lowPileCotton": "Бавовна з низьким ворсом",
+      "naturalDyes": "Фарбування натуральними барвниками",
+      "machineWashable": "Можна прати в машинці"
+    }
+  }
+}

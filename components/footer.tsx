@@ -1,12 +1,14 @@
 import { FC } from "react";
 import { ThemeChanger } from "./themeChanger";
+import { useTranslations } from "next-intl";
 import InstagramIcon from "./InstagramIcon";
 
 export const FooterComponent: FC = () => {
+  const t = useTranslations("Footer");
   return (
     <footer className=" bg-white dark:bg-black/90 shadow-inner py-4 px-8 mt-auto">
       <p className="text-gray-500 text-center">
-        &copy; {new Date().getFullYear()} ❤️ Kseniia Markova ❤️
+        {t("copyright", { year: new Date().getFullYear() })}
       </p>
       <div className="flex items-center justify-center">
         <a
